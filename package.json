@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "DISABLE_ESLINT_PLUGIN='true' react-scripts build",
+    "build": "PUBLIC_URL=https://imwebme.github.io/2022-feconf DISABLE_ESLINT_PLUGIN='true' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
