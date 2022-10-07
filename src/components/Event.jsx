@@ -9,7 +9,7 @@ const Event = () => {
       id="event"
     >
       <img src="/2022-feconf/img/event.png" width="100%" className="event-image" />
-      <img src="/2022-feconf/img/event.png" width="100%" className="event-image-mo" />
+      <img src="/2022-feconf/img/mo/event.png" width="100%" className="event-image-mo" />
     </div>
   );
 };
