@@ -51,10 +51,9 @@ function App() {
           <div
             className="main"
             style={{
-              width: "100%",
               display: "flex",
               flexDirection: "column",
-              alignItems: "flex-start",
+              alignItems: "center",
             }}
           >
             <div style={{ minHeight: "100vh" }}>
@@ -63,9 +62,7 @@ function App() {
             <About onLoad={getSize}></About>
             <Keyword onLoad={getSize}></Keyword>
             <Mission></Mission>
-            <div style={{ paddingRight: 56 }}>
               <Engineer></Engineer>
-            </div>
             <Event onLoad={getSize}></Event>
           </div>
         </div>

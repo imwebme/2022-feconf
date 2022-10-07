@@ -14,7 +14,7 @@ const About = () => {
       width='100%'
       />
       <img className='about-image2'
-      src='/2022-feconf/img/about.png'
+      src='/2022-feconf/img/mo/about.png'
       ref={imageRef}
       width='100%'
       />
