@@ -26,14 +26,6 @@ html {
   .logoWapper > div:last-child {
     padding-left: 40px;
   }
-  .logoWapper div:first-child::after {
-    content: "|";
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 52px;
-    position: absolute;
-    left: 50%;
-  }
   .nav {
     justify-content: center !important;
   }
@@ -50,9 +42,7 @@ html {
   .hidden-tablet {
     display: none;
   }
-  .hidden-pc {
-    display: block;
-  }
+
   .intro-image-container {
     width: 100%;
   }
@@ -106,6 +96,9 @@ html {
   width: 100%;
 }
 @media (max-width: 1024px) and (min-width: 992px) {
+  .active-pc {
+    display: block;
+  }
   .intro-container.product-section div.apple-wrap img.intro-image {
     max-width: 655px;
   }

@@ -15,11 +15,11 @@ const SecondIntro = ({ getSize }) => {
         <>
           <img
             className="intro-image animate__animated animate__fadeIn"
-            src="/img/message1.png"
+            src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881625855467550/message1.png"
             ref={imageRef}
             onLoad={getSize}
           ></img>
-          
+
         </>
       )}
     </>

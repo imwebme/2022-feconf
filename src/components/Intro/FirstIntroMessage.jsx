@@ -11,13 +11,13 @@ const FirstIntroMessage = ({ getSize, imageRef }) => {
     <div>
       <img
         className="intro-image animate__animated animate__fadeIn"
-        src="/img/hello1.png"
+        src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881623141752873/hello1.png"
         ref={imageRef}
       ></img>
       {sectionState && (
         <img
           className="intro-image animate__animated animate__fadeIn"
-          src="/img/hello2.png"
+          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881623489892352/hello2.png"
           ref={imageRef}
         ></img>
       )}

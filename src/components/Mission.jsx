@@ -42,29 +42,27 @@ export default function Mission() {
 
   return (
     <>
-      <div className="mission-container">
+      <div className="mission-container active-pc">
         <h1 className="mission-title">
-          We serve <br className="hidden-pc" /> the underserved
+        <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881626329432074/mission.png" alt="mission" />
         </h1>
-        <p>
-          우리는 기술로부터 소외된 사람들을 돕고 <br className="hidden-pc" />
-          그들을 위해 존재합니다.
-        </p>
-    </div>
-    <div className='earth-wrap'>
+    </div>     
+    <div className="mission-container active-mo">
+        <h1 className="mission-title">
+        <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881682742816798/mission.png" alt="mission" />
+        </h1>
+    </div>         
     <div className="video-container">
           <iframe
             width="100%"
             height="100%"
-            max-width="100%"
             src="https://www.youtube.com/embed/L1hMm0byUN0"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-        </div>
-      <img src="/img/earth.png" ref={earthref} className='earth-image'alt="earth"/>
-      </div>
+    </div>
+      <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881580116590643/earth.png" ref={earthref} className='earth-image earth-wrap'alt="earth"/>
     </>
   );
 }
