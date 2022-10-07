@@ -14,7 +14,7 @@ export default function Mission() {
     if (entry.isIntersecting) { 
       observer.unobserve(entry.target);
       await gsap.to(earthref.current, {
-        width: '120%',
+        scale: 1,
         duration: 1,
         opacity: 1,
         y: 0,
@@ -22,7 +22,7 @@ export default function Mission() {
       });
     } else {
       gsap.to(earthref.current, {
-        width: '100%',
+        scale: 1.2,
         duration: 1,
         opacity: 0,
         y: 100,
