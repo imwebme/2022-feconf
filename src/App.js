@@ -2,11 +2,22 @@ import logo from './logo.svg';
 import './style/main.css';
 import Intro from './components/Intro';
 import Event from './components/Event';
+import About from './components/About';
 import {useState, useRef} from 'react'
+import Keyword from './components/Keyword';
+import Mission from './components/Mission';
+import Engineer from './components/Engineer';
+
 
 function App() {
   const [size, setSize] = useState({});
   const imageRef = useRef(null);
+  const getSize = () => 
+    setSize({
+      width: imageRef.current.clientWidth,
+      height: imageRef.current.clientHeight
+    })
+  
   return (
     <>   
       <div className="root_container">
@@ -16,29 +27,32 @@ function App() {
             <div className="logoWapper">
               <img className="header_logo"
               src="/img/logo.png" alt="imweb-logo" ref={imageRef} 
-              onLoad={()=> setSize(imageRef.current.getBoundingClientRect())} />
+              onLoad={getSize}/>
               <img className="header_logo" src="/img/feconf_logo.png"
               alt='FECONF' 
               ref={imageRef}
-              onLoad={() => setSize(imageRef.current.getBoundingClientRect())}
-              />
+              onLoad={getSize}/>
             </div>
             <ul className="menu">
               <li className="menuItem">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="menuItem">
-                <a href="#">Imweb Engineer</a>
+                <a href="#enginner">Imweb Engineer</a>
               </li>
               <li className="menuItem">
-                <a href="#">Event</a>
+                <a href="#event">Event</a>
               </li>
             </ul>
             </nav>
           </header>
         <main className="main">
-          <Intro></Intro>
-          <Event></Event>
+          <Intro onLoad={getSize}></Intro>
+          <About onLoad={getSize}></About>
+          <Keyword onLoad={getSize}></Keyword>
+          <Mission></Mission>
+          <Engineer></Engineer>
+          <Event onLoad={getSize}></Event>
         </main>
         <footer className="footer">
           <a
@@ -48,7 +62,6 @@ function App() {
           >
             Powered by{' '}
             <span className="logo">
-            
             </span>
           </a>
         </footer>

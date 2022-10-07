@@ -1,4 +1,7 @@
-body {
+body,html {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "campton", sans-serif;
   -webkit-font-smoothing: antialiased;
