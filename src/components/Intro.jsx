@@ -1,56 +1,39 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import FirstIntro from "../components/Intro/FirtstIntro";
+import SecondIntro from "./Intro/SecondIntro";
+import ProdSection from "./Intro/ProdSection";
 
-const Intro = ({getSize}) => {
-  const [size, setSize] = useState({});
+const Intro = ({ getSize }) => {
   const imageRef = useRef(null);
+  const [second, setSecond] = useState(false);
+  const [third, setThird] = useState(false);
+  const [scrollFlag, setScrollFlag] = useState(0);
+
+  useEffect(() => {
+    console.log(scrollFlag);
+  }, [scrollFlag]);
+  const handleOnScroll = () => {
+    setScrollFlag(scrollFlag + 1);
+    if (scrollFlag > 10) {
+      setTimeout(() => {
+        setSecond(true);
+        if (second == true) setThird(true);
+        setScrollFlag(0);
+      }, 1000);
+    }
+  };
+
+  window.addEventListener("scroll", handleOnScroll);
 
   return (
     <>
-
-    <div className='intro-container talking-section' >
-     <div className='intro-image-wrap'>
-     <img className='intro-image'
-      src="/img/texting.png"
-      ref={imageRef}
-      onLoad={getSize}>
-      </img>
-      <img className='intro-image-2'
-      src="/img/typing_3.gif"></img>
-      </div>
-      <img className='intro-image'
-      src="/img/hello1.png"
-      ref={imageRef}
-      onLoad={getSize}></img>
-      <img className='intro-image'
-      src="/img/hello2.png"
-      ref={imageRef}
-      onLoad={getSize}></img>
-   <div className='intro-image-wrap'>
-     <img className='intro-image'
-      src="/img/texting.png"
-      ref={imageRef}
-      onLoad={getSize}>
-      </img>
-      <img className='intro-image-2'
-      src="/img/typing_3.gif"></img>
-      </div>
-      <img className='intro-image'
-      src="/img/message1.png"
-      ref={imageRef}
-      onLoad={getSize}></img>
-    </div>
-    <div className='intro-container product-section'>
-      <img className='intro-image'
-      src="/img/apple.png"
-      ref={imageRef}
-      onLoad={getSize}></img>
-    <img className='intro-image'
-      src="/img/star.png"
-      ref={imageRef}
-      onLoad={getSize}></img>
+      <div className="intro-container talking-section">
+        <FirstIntro getSize={getSize} />
+        {second && <SecondIntro getSize={getSize} />}
+        {third && <ProdSection getSize={getSize} />}
       </div>
     </>
   );
-}
+};
 
 export default Intro;
