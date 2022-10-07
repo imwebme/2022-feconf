@@ -11,7 +11,7 @@ const Intro = ({ getSize }) => {
 
   const handleOnScroll = () => {
     setScrollFlag(scrollFlag + 1);
-    if (scrollFlag > 20) {
+    if (scrollFlag > 10) {
       setTimeout(() => {
         setSecond(true);
         if (second == true) setThird(true);
