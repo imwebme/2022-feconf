@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./style/main.css";
+import "./style/index.css";
 import Intro from "./components/Intro";
 import Event from "./components/Event";
 import About from "./components/About";
@@ -56,12 +57,24 @@ function App() {
               </ul>
             </nav>
           </header>
-          <div className="main">
-            <Intro onLoad={getSize}></Intro>
+          <div
+            className="main"
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
+            <div style={{ minHeight: "100vh" }}>
+              <Intro onLoad={getSize}></Intro>
+            </div>
             <About onLoad={getSize}></About>
             <Keyword onLoad={getSize}></Keyword>
             <Mission></Mission>
-            <Engineer></Engineer>
+            <div style={{ paddingRight: 56 }}>
+              <Engineer></Engineer>
+            </div>
             <Event onLoad={getSize}></Event>
           </div>
           <footer className="footer">

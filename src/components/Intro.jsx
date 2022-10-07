@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import FirstIntro from "../components/Intro/FirtstIntro";
 import SecondIntro from "./Intro/SecondIntro";
-import ProdSection from "./Intro/ProdSection";
+import MediaQuery from "react-responsive";
+import ProdSectionPC from "./Intro/ProdSectionPC";
+import ProdSectionMobile from "./Intro/ProdSectionPC";
 
-const Intro = ({getSize}) => {
+const Intro = ({ getSize }) => {
   const imageRef = useRef(null);
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
@@ -17,17 +19,23 @@ const Intro = ({getSize}) => {
       }, 1500);
   }, [second]);
   return (
-    <>
-
-    <div className='intro-container talking-section' >
-    <div className='intro-image-container' style={{ display: "flex" }}>
-    <FirstIntro></FirstIntro>
+    <div className="intro-container talking-section">
+      <div style={{ left: 0 }}>
+        <FirstIntro />
+      </div>
+      {second && <SecondIntro getSize={getSize} />}
+      {third && (
+        <>
+          <MediaQuery minWidth={1224}>
+            <ProdSectionPC getSize={getSize} />
+          </MediaQuery>
+          <MediaQuery maxWidth={1224}>
+            <ProdSectionMobile getSize={getSize} />
+          </MediaQuery>
+        </>
+      )}
     </div>
-        {second && <SecondIntro getSize={getSize} />}
-        {third && <ProdSection getSize={getSize} />}
-    </div>
-    </>
   );
-}
+};
 
 export default Intro;
