@@ -291,6 +291,7 @@ html {
 }
 
 .intro-container {
+  min-height: 200vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

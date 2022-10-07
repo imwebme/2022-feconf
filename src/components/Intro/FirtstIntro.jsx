@@ -8,9 +8,7 @@ const FirstIntro = ({ getSize }) => {
   }, []);
 
   return (
-    <div className="intro-container talking-section">
-      {sectionState ? <Texting /> : <FirstIntroMessage getSize={getSize} />}
-    </div>
+    <>{sectionState ? <Texting /> : <FirstIntroMessage getSize={getSize} />}</>
   );
 };
 

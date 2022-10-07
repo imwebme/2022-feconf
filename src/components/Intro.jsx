@@ -7,20 +7,15 @@ const Intro = ({ getSize }) => {
   const imageRef = useRef(null);
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
-  const [scrollFlag, setScrollFlag] = useState(0);
-
-  const handleOnScroll = () => {
-    setScrollFlag(scrollFlag + 1);
-    if (scrollFlag > 10) {
+  useEffect(() => {
+    setTimeout(() => {
+      setSecond(true);
+    }, 3000);
+    if (second)
       setTimeout(() => {
-        setSecond(true);
-        if (second == true) setThird(true);
-        setScrollFlag(0);
-      }, 1000);
-    }
-  };
-
-  window.addEventListener("scroll", handleOnScroll);
+        setThird(true);
+      }, 1500);
+  }, [second]);
 
   return (
     <>

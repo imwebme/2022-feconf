@@ -8,7 +8,7 @@ const SecondIntro = ({ getSize }) => {
   }, []);
 
   return (
-    <div className="intro-container talking-section">
+    <>
       {sectionState ? (
         <Texting />
       ) : (
@@ -21,7 +21,7 @@ const SecondIntro = ({ getSize }) => {
           ></img>
         </>
       )}
-    </div>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ const ProdSection = ({ getSize }) => {
   const imageRef = useRef(null);
   const [sectionState, setsectionState] = useState(false);
   useEffect(() => {
-    setTimeout(() => setsectionState(true), 1000);
+    setTimeout(() => setsectionState(true), 500);
   }, []);
   return (
     <>
