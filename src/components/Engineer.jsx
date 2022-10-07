@@ -1,6 +1,11 @@
 import React from 'react';
 
 const Engineer = () => {
+
+const locationHandler = () => {
+  window.location.href = 'https://team.imweb.me/'
+}
+
   return (
 
     <div className='container enginner-container' id="enginner">
@@ -38,8 +43,8 @@ const Engineer = () => {
           어버이날 선물 지급<br/>
         </p>
       </div>
-      </div>
-      <button className='enginner-content-btn'>
+      </div>/
+      <button className='enginner-content-btn' onClick={locationHandler}>
         아임웹 팀이 궁금하다면? 
     </button>
     </div>

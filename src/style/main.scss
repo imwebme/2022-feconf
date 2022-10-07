@@ -52,9 +52,10 @@ html {
   background-image: url('/public/img/background.png');
 }
 
-.earth {
-  border-bottom: 1px solid gray;
-  margin-top: -60rem;
+.earth-image {
+  margin-bottom: -.3rem;
+  width: 100%;
+  transition: .5s;
 }
 
 .container {
@@ -82,6 +83,13 @@ html {
   height: 374px;
 }
 
+.earth-wrap {
+  border-bottom: 1px solid lightgray;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .menu,
 .menuItem {
@@ -555,8 +563,7 @@ html {
 
 .intro-image-2 {
   max-width: 100%;
-  position: absolute
-  ;
+  position: absolute;
 }
 
 .paragraph {

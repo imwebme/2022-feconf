@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const Intro = ({getSize}) => {
-  const [size, setSize] = useState({});
+const Intro = () => {
   const imageRef = useRef(null);
 
   return (
@@ -40,8 +39,8 @@ const Intro = ({getSize}) => {
       </div>
       <div className='fake-image'></div>
       </div>
-      <img className='intro-image'
       src="/img/message1.png"
+      <img className='intro-image'
       ref={imageRef}
       ></img>
     </div>
