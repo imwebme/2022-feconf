@@ -10,7 +10,7 @@ const ProdSectionMobile = ({ getSize }) => {
     <div className="intro-container product-section">
       <img
         className="intro-image animate__animated animate__fadeIn"
-        src="/img/apple.png"
+        src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881579277725736/apple.png"
         ref={imageRef}
         onLoad={getSize}
       ></img>
@@ -18,7 +18,7 @@ const ProdSectionMobile = ({ getSize }) => {
       {sectionState && (
         <img
           className="intro-image animate__animated animate__fadeIn"
-          src="/img/star.png"
+          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881662949883955/star.png"
           ref={imageRef}
           onLoad={getSize}
         ></img>

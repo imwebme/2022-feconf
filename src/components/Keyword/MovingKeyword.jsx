@@ -40,13 +40,13 @@ const MovingKeyword = ({ getSize }) => {
       >
         <img
           className={`keyword-image ${firstLine}`}
-          src="/img/message_line1.png"
+          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027879714016202752/message_line1.png"
           ref={imageRef}
           width="100%" 
         ></img>
         <img
           className={`keyword-image ${secondLine}`}
-          src="/img/message_line2.png"
+          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027879714385309738/message_line2.png"
           ref={imageRef}
           width="100%"
         ></img>

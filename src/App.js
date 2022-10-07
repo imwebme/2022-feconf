@@ -17,7 +17,7 @@ function App() {
       width: imageRef.current.clientWidth,
       height: imageRef.current.clientHeight,
     });
-
+    
   return (
     <>
       <div className="root_container">
@@ -28,17 +28,8 @@ function App() {
                 <div>
                   <img
                     className="header_logo"
-                    src="/img/logo.png"
+                    src="https://cdn.discordapp.com/attachments/1027877908481577003/1027880368445083648/top.png"
                     alt="imweb-logo"
-                    ref={imageRef}
-                    onLoad={getSize}
-                  />
-                </div>
-                <div>
-                  <img
-                    className="header_logo"
-                    src="/img/feconf_logo.png"
-                    alt="FECONF"
                     ref={imageRef}
                     onLoad={getSize}
                   />
@@ -77,19 +68,9 @@ function App() {
             </div>
             <Event onLoad={getSize}></Event>
           </div>
-          <footer className="footer">
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Powered by <span className="logo"></span>
-            </a>
-          </footer>
         </div>
       </div>
     </>
   );
 }
-
 export default App;
