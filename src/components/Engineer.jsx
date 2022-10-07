@@ -9,8 +9,8 @@ const locationHandler = () => {
   return (
 
     <div className='container enginner-container' id="enginner">
-      <img className='enginner-title' src="/2022-feconf/img/title.png" alt='title'></img>
-      <img className='enginner-title-mo' src="/2022-feconf/img/title.png" alt='title'></img>
+      <img className='enginner-title' src={`${process.env.PUBLIC_URL}/img/title.png`} alt='title'></img>
+      <img className='enginner-title-mo' src={`${process.env.PUBLIC_URL}/img/title.png`} alt='title'></img>
       <div className='enginner-para'>
         <p>아임웹 엔지니어링팀은 기술에 소외된 사람들이 쉽고 즐겁게 다룰 수 있는 기술을 개발하고 있습니다.
         아임웹 프론트엔드 엔지니어는 웹사이트 제작, 쇼핑몰 운영과 관련된 기술을 누구나 쉽고 멋지게 이용할 수 있도록 다양한 문제를 해결하고 있습니다.

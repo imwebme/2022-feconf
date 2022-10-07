@@ -40,13 +40,13 @@ const MovingKeyword = ({ getSize }) => {
       >
         <img
           className={`keyword-image ${firstLine}`}
-          src="/2022-feconf/img/message_line.png"
+          src={`${process.env.PUBLIC_URL}/img/message_line.png`}
           ref={imageRef}
           width="100%" 
         ></img>
         <img
           className={`keyword-image ${secondLine}`}
-          src="/2022-feconf/img/message_line2.png"
+          src={`${process.env.PUBLIC_URL}/img/message_line2.png`}
           ref={imageRef}
           width="100%"
         ></img>

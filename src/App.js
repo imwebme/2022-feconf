@@ -28,7 +28,7 @@ function App() {
                 <div>
                   <img
                     className="header_logo"
-                    src="/2022-feconf/img/mo/top.png"
+                    src={`${process.env.PUBLIC_URL}/img/mo/top.png`}
                     alt="imweb-logo"
                     ref={imageRef}
                     onLoad={getSize}

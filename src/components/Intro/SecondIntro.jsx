@@ -15,7 +15,7 @@ const SecondIntro = ({ getSize }) => {
         <>
           <img
             className="intro-image animate__animated animate__fadeIn"
-            src="/2022-feconf/img/message1.png"
+            src={`${process.env.PUBLIC_URL}/img/message1.png`}
             ref={imageRef}
             onLoad={getSize}
           ></img>

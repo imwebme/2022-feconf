@@ -11,7 +11,7 @@ const ProdSectionPC = ({ getSize }) => {
       <div className="apple-wrap animate__animated animate__fadeIn">
         <img
           className="intro-image"
-          src="/2022-feconf/img/apple.png"
+          src={`${process.env.PUBLIC_URL}/img/apple.png`}
           ref={imageRef}
           onLoad={getSize}
         ></img>
@@ -20,7 +20,7 @@ const ProdSectionPC = ({ getSize }) => {
         <div className="star-wrap">
           <img
             className="intro-image animate__animated animate__fadeIn"
-            src="/2022-feconf/img/star.png"
+            src={`${process.env.PUBLIC_URL}/img/star.png`}
             ref={imageRef}
             onLoad={getSize}
           ></img>

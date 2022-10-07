@@ -8,7 +8,7 @@ const KeywordBottom = ({ getSize }) => {
       <div className="keyword-bottom-container">
         <img
           className="keyword-image"
-          src="/2022-feconf/img/digimon2.png"
+          src={`${process.env.PUBLIC_URL}/img/digimon2.png`}
           ref={imageRef}
           width="100%" 
         ></img>

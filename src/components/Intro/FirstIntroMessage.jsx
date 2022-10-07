@@ -11,13 +11,13 @@ const FirstIntroMessage = ({ getSize, imageRef }) => {
     <div>
       <img
         className="intro-image animate__animated animate__fadeIn"
-        src="/2022-feconf/img/hello1.png"
+        src={`${process.env.PUBLIC_URL}/img/hello1.png`}
         ref={imageRef}
       ></img>
       {sectionState && (
         <img
           className="intro-image animate__animated animate__fadeIn"
-          src="/2022-feconf/img/hello2.png"
+          src={`${process.env.PUBLIC_URL}/img/hello2.png`}
           ref={imageRef}
         ></img>
       )}

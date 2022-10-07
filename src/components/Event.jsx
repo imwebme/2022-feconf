@@ -8,8 +8,8 @@ const Event = () => {
       className="container event-container"
       id="event"
     >
-      <img src="/2022-feconf/img/event.png" width="100%" className="event-image" />
-      <img src="/2022-feconf/img/mo/event.png" width="100%" className="event-image-mo" />
+      <img src={`${process.env.PUBLIC_URL}/img/event.png`} width="100%" className="event-image" />
+      <img src={`${process.env.PUBLIC_URL}/img/mo/event.png`} width="100%" className="event-image-mo" />
     </div>
   );
 };

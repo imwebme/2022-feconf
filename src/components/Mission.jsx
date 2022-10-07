@@ -44,25 +44,25 @@ export default function Mission() {
     <>
       <div className="mission-container active-pc">
         <h1 className="mission-title">
-        <img src="/2022-feconf/img/mission.png" alt="mission" />
+        <img src={`${process.env.PUBLIC_URL}/img/mission.png`} alt="mission" />
         </h1>
     </div>     
     <div className="mission-container active-mo">
         <h1 className="mission-title">
-        <img src="/2022-feconf/img/mission.png" alt="mission" />
+        <img src={`${process.env.PUBLIC_URL}/img/mission.png`} alt="mission" />
         </h1>
     </div>         
     <div className="video-container">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/L1hMm0byUN0"
+            src={`${process.env.PUBLIC_URL}https://www.youtube.com/embed/L1hMm0byUN0`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
     </div>
-      <img src="/2022-feconf/img/earth.png" ref={earthref} className='earth-image earth-wrap'alt="earth"/>
+      <img src={`${process.env.PUBLIC_URL}/img/earth.png`} ref={earthref} className='earth-image earth-wrap'alt="earth"/>
     </>
   );
 }

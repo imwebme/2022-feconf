@@ -10,7 +10,7 @@ const ProdSectionMobile = ({ getSize }) => {
     <div className="intro-container product-section">
       <img
         className="intro-image animate__animated animate__fadeIn"
-        src="/2022-feconf/img/apple.png"
+        src={`${process.env.PUBLIC_URL}/img/apple.png`}
         ref={imageRef}
         onLoad={getSize}
       ></img>
@@ -18,7 +18,7 @@ const ProdSectionMobile = ({ getSize }) => {
       {sectionState && (
         <img
           className="intro-image animate__animated animate__fadeIn"
-          src="/2022-feconf/img/star.png"
+          src={`${process.env.PUBLIC_URL}/img/star.png`}
           ref={imageRef}
           onLoad={getSize}
         ></img>
