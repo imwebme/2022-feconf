@@ -9,7 +9,7 @@ const Intro = ({ getSize }) => {
       <div className="intro-image-wrap animate__animated animate__fadeOut animate__delay-1s">
         <img
           className="intro-image"
-          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881663931355217/typing_2.gif"
+          src="/2022-feconf/img/typing_2.gif"
           ref={imageRef}
         ></img>
       </div>

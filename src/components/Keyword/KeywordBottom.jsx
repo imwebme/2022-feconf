@@ -8,7 +8,7 @@ const KeywordBottom = ({ getSize }) => {
       <div className="keyword-bottom-container">
         <img
           className="keyword-image"
-          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027878472841961482/digimon2.png"
+          src="/2022-feconf/img/digimon2.png"
           ref={imageRef}
           width="100%" 
         ></img>
