@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -79,6 +79,7 @@ html {
 .earth-wrap {
   border-bottom: 1px solid lightgray;
   width: 100vw;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +108,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2rem;
   z-index: 1;
 }
 
@@ -303,7 +303,7 @@ html {
 .keyword-container {
   width: 100vw;
   position: relative;
-  height: 100%;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,11 +344,9 @@ html {
 
 .intro-container img.intro-image {
   margin-bottom: 1rem;
-  max-width: 100%;
 }
 
 .intro-image-container {
-  max-width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,11 +358,21 @@ html {
           justify-content: center;
 }
 
+.apple-wrap {
+  -webkit-transform: translate(25rem, 3rem);
+          transform: translate(25rem, 3rem);
+}
+
+.star-wrap {
+  -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem);
+}
+
 .mission-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -380,7 +388,8 @@ html {
 }
 
 .mission-container h1 {
-  font-size: 5rem;
+  font-family: 'Compton';
+  font-size: 64px;
   max-width: 100%;
   font-weight: 700;
   text-align: center;
@@ -390,10 +399,11 @@ html {
 
 .mission-container p {
   color: #fff;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .video-container {
+  position: absolute;
   z-index: 100;
   width: 100%;
   max-width: 100%;
@@ -511,16 +521,16 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 161;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   padding: 2.5rem;
   background: #1a6dff;
   border-radius: 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
   color: #fff;
 }
 
 .enginner-content-card h1 {
-  font-family: 'Campton', sans-serif;
+  font-family: "Campton", sans-serif;
   margin: 0;
   padding-bottom: 5rem;
   font-size: 1.8rem;
@@ -608,7 +618,7 @@ html {
 .form-container form {
   background: #1e253e;
   border-radius: 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,7 +627,7 @@ html {
 .form-container form p {
   color: #fff;
   overflow-y: auto;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-group input.form-control {

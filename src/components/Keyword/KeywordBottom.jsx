@@ -10,7 +10,7 @@ const KeywordBottom = ({ getSize }) => {
           className="keyword-image"
           src="/img/digimon2.png"
           ref={imageRef}
-          width="100%"
+          width="100%" 
         ></img>
       </div>
     </>

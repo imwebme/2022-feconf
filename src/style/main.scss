@@ -10,16 +10,17 @@ $breakpoint3: 1280px;
 $breakpoint4: 1440px;
 $breakpoint5: 1600px;
 $breakpoint6: 1920px;
+
 @font-face {
   font-family: 'NEXON Lv1 Gothic OTF';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -89,10 +90,12 @@ html {
 .earth-wrap {
   border-bottom: 1px solid lightgray;
   width: 100vw;
+  background: transparent;
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
+
 .menu,
 .menuItem {
   list-style: none;
@@ -107,7 +110,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
   z-index: 1;
 
   .menu {
@@ -236,6 +238,7 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
@@ -267,7 +270,7 @@ html {
 .keyword-container {
   width: 100vw;
   position: relative;
-  height: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -291,21 +294,27 @@ html {
 
   img.intro-image {
     margin-bottom: 1rem;
-    max-width: 100%;
   }
 }
 
 
 .intro-image-container {
-  max-width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.apple-wrap {
+  transform: translate(25rem, 3rem);
+}
+
+.star-wrap {
+  transform: translateY(-10rem)
+}
+
 .mission-container {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -313,7 +322,8 @@ html {
 }
 
 .mission-container h1 {
-  font-size: 5rem;
+  font-family: 'Compton';
+  font-size: 64px;
   max-width: 100%;
   font-weight: 700;
   text-align: center;
@@ -324,10 +334,11 @@ html {
 
 .mission-container p {
   color: #fff;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .video-container {
+  position: absolute;
   z-index: 100;
   width: 100%;
   max-width: 100%;
@@ -464,6 +475,7 @@ html {
   .enginner-title {
     display: none;
   }
+
   .nav .menu {
     display: none;
   }
@@ -493,11 +505,9 @@ html {
 
 .enginner-content-card:hover {
   transition: 0.5s ease;
-  background: linear-gradient(
-    315deg,
-    rgba(26, 107, 255, 1) 0%,
-    rgb(64, 245, 255) 100%
-  );
+  background: linear-gradient(315deg,
+      rgba(26, 107, 255, 1) 0%,
+      rgb(64, 245, 255) 100%);
 }
 
 //checkbox

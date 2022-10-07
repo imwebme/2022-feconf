@@ -13,10 +13,6 @@ const locationHandler = () => {
         src="/img/title.png"
         alt="title"
       ></img>
-      <p className="engineer-title">Imweb Engineer</p>
-      <h1>
-        사이트를 위한 <br /> 사이트를 만드는 <br /> Imweb Engineer
-      </h1>
       <div className="enginner-para">
         <p className="hidden-tablet">
           아임웹 엔지니어링팀은 기술에 소외된 사람들이 쉽고 즐겁게 다룰 수 있는

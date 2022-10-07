@@ -19,10 +19,10 @@ const MovingKeyword = ({ getSize }) => {
 
   const addEvents = async () => {
     setFirstLine(
-      "animate__animated animate__slideOutLeft animate__slower animate__infinite"
+      "animate__animated animate__slideInRight animate__slower animate__infinite"
     );
     setSecondLine(
-      "animate__animated animate__slideOutRight animate__slower animate__infinite"
+      "animate__animated animate__slideInLeft animate__slower animate__infinite"
     );
   };
 
@@ -42,7 +42,7 @@ const MovingKeyword = ({ getSize }) => {
           className={`keyword-image ${firstLine}`}
           src="/img/message_line1.png"
           ref={imageRef}
-          width="100%"
+          width="100%" 
         ></img>
         <img
           className={`keyword-image ${secondLine}`}

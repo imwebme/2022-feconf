@@ -50,7 +50,9 @@ export default function Mission() {
           우리는 기술로부터 소외된 사람들을 돕고 <br className="hidden-pc" />
           그들을 위해 존재합니다.
         </p>
-        <div className="video-container">
+    </div>
+    <div className='earth-wrap'>
+    <div className="video-container">
           <iframe
             width="100%"
             height="100%"
@@ -61,8 +63,6 @@ export default function Mission() {
             allowFullScreen
           ></iframe>
         </div>
-    </div>
-    <div className='earth-wrap'>
       <img src="/img/earth.png" ref={earthref} className='earth-image'alt="earth"/>
       </div>
     </>
