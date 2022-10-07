@@ -34,6 +34,8 @@ jobs:
 
       - name: Building App
         run: yarn build
+        env:
+          process.env.CI: false
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
