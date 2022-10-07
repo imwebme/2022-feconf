@@ -11,7 +11,7 @@ const ProdSectionPC = ({ getSize }) => {
       <div className="apple-wrap animate__animated animate__fadeIn">
         <img
           className="intro-image"
-          src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881579277725736/apple.png"
+          src="/2022-feconf/img/apple.png"
           ref={imageRef}
           onLoad={getSize}
         ></img>
@@ -20,7 +20,7 @@ const ProdSectionPC = ({ getSize }) => {
         <div className="star-wrap">
           <img
             className="intro-image animate__animated animate__fadeIn"
-            src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881662949883955/star.png"
+            src="/2022-feconf/img/star.png"
             ref={imageRef}
             onLoad={getSize}
           ></img>

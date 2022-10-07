@@ -22,7 +22,7 @@ html {
   background-color: #0b122e;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://cdn.discordapp.com/attachments/1027877908481577003/1027893122103005214/new_bg.png");
+  background-image: url("../../public/img/new_bg.png");
 }
 
 .earth-image {
@@ -225,7 +225,7 @@ html {
 }
 
 .keyword-top-section {
-  background: url("https://cdn.discordapp.com/attachments/1027877908481577003/1027886047255859211/feconf_space_bg.png") no-repeat;
+  background: url("../../public/img/feconf_space_bg.png") no-repeat;
 }
 
 .keyword-container {

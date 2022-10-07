@@ -44,12 +44,12 @@ export default function Mission() {
     <>
       <div className="mission-container active-pc">
         <h1 className="mission-title">
-        <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881626329432074/mission.png" alt="mission" />
+        <img src="/2022-feconf/img/mission.png" alt="mission" />
         </h1>
     </div>     
     <div className="mission-container active-mo">
         <h1 className="mission-title">
-        <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881682742816798/mission.png" alt="mission" />
+        <img src="/2022-feconf/img/mission.png" alt="mission" />
         </h1>
     </div>         
     <div className="video-container">
@@ -62,7 +62,7 @@ export default function Mission() {
             allowFullScreen
           ></iframe>
     </div>
-      <img src="https://cdn.discordapp.com/attachments/1027877908481577003/1027881580116590643/earth.png" ref={earthref} className='earth-image earth-wrap'alt="earth"/>
+      <img src="/2022-feconf/img/earth.png" ref={earthref} className='earth-image earth-wrap'alt="earth"/>
     </>
   );
 }

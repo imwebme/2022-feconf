@@ -28,7 +28,7 @@ function App() {
                 <div>
                   <img
                     className="header_logo"
-                    src="https://cdn.discordapp.com/attachments/1027877908481577003/1027880368445083648/top.png"
+                    src="/2022-feconf/img/mo/top.png"
                     alt="imweb-logo"
                     ref={imageRef}
                     onLoad={getSize}
