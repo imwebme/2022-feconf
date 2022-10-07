@@ -1,4 +1,4 @@
-//variabble 
+//variabble
 
 $background-color: #0b122e;
 $brand-color: #1a6dff;
@@ -10,30 +10,29 @@ $breakpoint3: 1280px;
 $breakpoint4: 1440px;
 $breakpoint5: 1600px;
 $breakpoint6: 1920px;
-
 @font-face {
   font-family: 'NEXON Lv1 Gothic OTF';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-//box-style 
+//box-style
 @mixin box-style {
   border-radius: 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 //font-family
 
-$font-family: 'campton', sans-serif;
+$font-family: "campton", sans-serif;
 
 body,
 html {
@@ -49,7 +48,7 @@ html {
   background-color: #0b122e;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/public/img/background.png');
+  background-image: url("/public/img/background.png");
 }
 
 .earth-image {
@@ -63,7 +62,6 @@ html {
   max-width: $breakpoint5;
   position: relative;
   // border: 1px solid gray;
-
 }
 
 .main {
@@ -95,13 +93,12 @@ html {
   justify-content: center;
   overflow: hidden;
 }
-
 .menu,
 .menuItem {
   list-style: none;
 }
 
-//navigater 
+//navigater
 .nav {
   top: 0;
   left: 0;
@@ -125,7 +122,7 @@ html {
     justify-content: center;
     align-items: center;
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
   }
 
   a {
@@ -215,7 +212,6 @@ html {
   max-width: 300px;
 }
 
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -240,7 +236,6 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
-
   .card,
   .footer {
     border-color: #222;
@@ -265,10 +260,8 @@ html {
   display: none;
 }
 
-
-
 .keyword-top-section {
-  background: url('/public/img/feconf_space_bg.png') no-repeat;
+  background: url("/public/img/feconf_space_bg.png") no-repeat;
 }
 
 .keyword-container {
@@ -301,6 +294,7 @@ html {
     max-width: 100%;
   }
 }
+
 
 .intro-image-container {
   max-width: 30%;
@@ -420,28 +414,25 @@ html {
   }
 }
 
-
 .enginner-content-card {
   display: flex;
   flex-direction: column;
   z-index: 161;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   padding: 2.5rem;
   background: $brand-color;
   @include box-style();
   color: #fff;
 }
 
-
-
 .enginner-content-card h1 {
-  font-family: 'Campton', sans-serif;
+  font-family: "Campton", sans-serif;
   margin: 0;
   padding-bottom: 5rem;
   font-size: 1.8rem;
   font-weight: 700;
-
 }
+
 
 .enginner-para {
   color: white;
@@ -473,7 +464,6 @@ html {
   .enginner-title {
     display: none;
   }
-
   .nav .menu {
     display: none;
   }
@@ -502,12 +492,15 @@ html {
 }
 
 .enginner-content-card:hover {
-
   transition: 0.5s ease;
-  background: linear-gradient(315deg, rgba(26, 107, 255, 1) 0%, rgb(64, 245, 255) 100%);
+  background: linear-gradient(
+    315deg,
+    rgba(26, 107, 255, 1) 0%,
+    rgb(64, 245, 255) 100%
+  );
 }
 
-//checkbox 
+//checkbox
 .form-check-input {
   width: 1.5rem;
   height: 1.5rem;
@@ -528,20 +521,18 @@ html {
     background-position: center center;
     background-size: 50% 50%;
   }
-
 }
 
 .form-container form {
   background: #1e253e;
   @include box-style();
   display: flex;
-
 }
 
 .form-container form p {
   color: #fff;
   overflow-y: auto;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-group input.form-control {
@@ -563,7 +554,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-
 }
 
 .intro-image-2 {
