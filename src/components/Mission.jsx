@@ -1,6 +1,45 @@
-import React from "react";
 
+import React, {useState, useEffect, useRef} from 'react'
+import {gsap}from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+//scroll event
 export default function Mission() {
+
+  const intersctionRef = useRef(null);
+  const [size, setSize] = useState({});
+  const earthref = useRef(null);
+
+  const onIntersect = async ([entry], observer) => {  
+    if (entry.isIntersecting) { 
+      observer.unobserve(entry.target);
+      await gsap.to(earthref.current, {
+        width: '120%',
+        duration: 1,
+        opacity: 1,
+        y: 0,
+        ease: 'power4.out',
+      });
+    } else {
+      gsap.to(earthref.current, {
+        width: '100%',
+        duration: 1,
+        opacity: 0,
+        y: 100,
+        ease: 'power4.out',
+      });
+    }
+  };
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(onIntersect, {threshold: 0});
+    observer.observe(earthref.current);
+    return () => observer.disconnect();
+  }, []);
+
+
   return (
     <>
       <div className="mission-container">
@@ -22,8 +61,10 @@ export default function Mission() {
             allowFullScreen
           ></iframe>
         </div>
+    </div>
+    <div className='earth-wrap'>
+      <img src="/img/earth.png" ref={earthref} className='earth-image'alt="earth"/>
       </div>
-      <img src="/img/earth.png" className="earth" alt="earth" />
     </>
   );
 }

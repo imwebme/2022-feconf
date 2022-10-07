@@ -1,6 +1,11 @@
 import React from "react";
 
 const Engineer = () => {
+
+const locationHandler = () => {
+  window.location.href = 'https://team.imweb.me/'
+}
+
   return (
     <div className="container enginner-container" id="enginner">
       <img
@@ -42,6 +47,7 @@ const Engineer = () => {
         </div>
         <div className="enginner-content-card">
           <h1>Growth</h1>
+
           <p className="paragraph">
             도서 구입비용 지원
             <br />

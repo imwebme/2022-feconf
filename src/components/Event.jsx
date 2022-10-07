@@ -7,7 +7,10 @@ const Event = () => {
     <div className='container event-container' id="event">
       <img
       src="/img/event.png"
-      width="100%"/>
+      width="100%" className='event-image'/>
+      <img 
+      src="/img/mo/event.png"
+      width="100%" className='event-image-mo' />
     </div>
   );
 }
