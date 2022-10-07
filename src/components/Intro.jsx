@@ -9,12 +9,9 @@ const Intro = ({ getSize }) => {
   const [third, setThird] = useState(false);
   const [scrollFlag, setScrollFlag] = useState(0);
 
-  useEffect(() => {
-    console.log(scrollFlag);
-  }, [scrollFlag]);
   const handleOnScroll = () => {
     setScrollFlag(scrollFlag + 1);
-    if (scrollFlag > 10) {
+    if (scrollFlag > 20) {
       setTimeout(() => {
         setSecond(true);
         if (second == true) setThird(true);
