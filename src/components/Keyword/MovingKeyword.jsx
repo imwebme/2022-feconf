@@ -40,7 +40,7 @@ const MovingKeyword = ({ getSize }) => {
       >
         <img
           className={`keyword-image ${firstLine}`}
-          src={`${process.env.PUBLIC_URL}/img/message_line1.png`}
+          src={`https://cdn.discordapp.com/attachments/1027877908481577003/1027944874797973554/message_line1.png`}
           ref={imageRef}
           width="100%" 
         ></img>
