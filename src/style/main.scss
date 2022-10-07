@@ -431,6 +431,7 @@ html {
 
 
 .enginner-content-wrap {
+  scroll-snap-type: x mandatory;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -446,9 +447,10 @@ html {
 @media all and (max-width: 1024px) {
   .enginner-content-wrap {
     width: 100vw;
-    grid-template-columns: repeat(3, 620px);
+    grid-template-columns: repeat(3, 90vw);
     overflow-x: scroll;
     justify-content: flex-start;
+    scroll-snap-type: x mandatory;
   }
 }
 
@@ -467,14 +469,17 @@ html {
 }
 
 .enginner-content-card {
+  background: #1a6dff;
+  border-radius: 2rem;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  z-index: 161;
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
+  margin: 0.5rem;
   padding: 2.5rem;
-  background: $brand-color;
-  @include box-style();
-  color: #fff;
+  z-index: 161;
+  scroll-snap-align: start;
+  max-width: 100vw;
 }
 
 .enginner-content-card h1 {

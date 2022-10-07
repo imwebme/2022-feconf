@@ -56,7 +56,7 @@ export default function Mission() {
           <iframe
             width="100%"
             height="100%"
-            src={`${process.env.PUBLIC_URL}https://www.youtube.com/embed/L1hMm0byUN0`}
+            src={`https://www.youtube.com/embed/L1hMm0byUN0`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
