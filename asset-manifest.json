@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/2022-feconf/static/css/main.aaf147c0.css",
+    "main.js": "/2022-feconf/static/js/main.a1f564f8.js",
+    "static/js/787.fcc08015.chunk.js": "/2022-feconf/static/js/787.fcc08015.chunk.js",
+    "static/media/logo.svg": "/2022-feconf/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/2022-feconf/index.html",
+    "main.aaf147c0.css.map": "/2022-feconf/static/css/main.aaf147c0.css.map",
+    "main.a1f564f8.js.map": "/2022-feconf/static/js/main.a1f564f8.js.map",
+    "787.fcc08015.chunk.js.map": "/2022-feconf/static/js/787.fcc08015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aaf147c0.css",
+    "static/js/main.a1f564f8.js"
+  ]
+}
