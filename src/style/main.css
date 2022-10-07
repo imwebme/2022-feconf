@@ -286,6 +286,10 @@ html {
   background-clip: border-box;
 }
 
+.keyword-image{
+  --animate-duration: 3s;
+  display: block;
+}
 .keyword-bottom-container {
   width: 100vw;
 }
