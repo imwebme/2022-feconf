@@ -5,9 +5,10 @@ const Engineer = () => {
 
     <div className='container enginner-container' id="enginner">
       <img className='enginner-title' src="/img/title.png" alt='title'></img>
+      <img className='enginner-title-mo' src="/img/mo/title.png" alt='title'></img>
       <div className='enginner-para'>
         <p>아임웹 엔지니어링팀은 기술에 소외된 사람들이 쉽고 즐겁게 다룰 수 있는 기술을 개발하고 있습니다.
-        아임웹 프론트엔드 엔지니어는 웹사이트 제작, 쇼핑몰 운영과 관련된 기술을 누구나 쉽고 멋지게 이용할 수 있도록 다양한 문제를 해결하고 있습니다,
+        아임웹 프론트엔드 엔지니어는 웹사이트 제작, 쇼핑몰 운영과 관련된 기술을 누구나 쉽고 멋지게 이용할 수 있도록 다양한 문제를 해결하고 있습니다.
         도전을 좋아하고 끈기를 가진 프론트엔드 엔지니어라면 아임웹과 함께해 주세요.</p>
       </div>
       <div className='enginner-content-wrap'>
@@ -38,6 +39,9 @@ const Engineer = () => {
         </p>
       </div>
       </div>
+      <button className='enginner-content-btn'>
+        아임웹 팀이 궁금하다면? 
+    </button>
     </div>
   );
 }

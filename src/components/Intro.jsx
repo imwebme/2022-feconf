@@ -8,8 +8,8 @@ const Intro = ({getSize}) => {
     <>
 
     <div className='intro-container talking-section' >
-    <div className='intro-image-container'style={{display: 'flex'}}>
-     <div className='intro-image-wrap' >
+    <div className='intro-image-container'>
+     <div className='intro-image-wrap' style={{display: 'flex'}}>
      <img className='intro-image'
       src="/img/texting.png"
       ref={imageRef}
@@ -18,7 +18,7 @@ const Intro = ({getSize}) => {
       <img className='intro-image-2'
       src="/img/typing_3.gif"></img>
       </div>
-      <div className='fake-image' style={{width : '50%'}}></div>
+      <div className='fake-image'></div>
       </div>
       <img className='intro-image'
       src="/img/hello1.png"
@@ -28,7 +28,8 @@ const Intro = ({getSize}) => {
       src="/img/hello2.png"
       ref={imageRef}
       ></img>
-   <div className='intro-image-wrap'>
+    <div className='intro-image-container'>
+     <div className='intro-image-wrap' style={{display: 'flex'}}>
      <img className='intro-image'
       src="/img/texting.png"
       ref={imageRef}
@@ -36,6 +37,8 @@ const Intro = ({getSize}) => {
       </img>
       <img className='intro-image-2'
       src="/img/typing_3.gif"></img>
+      </div>
+      <div className='fake-image'></div>
       </div>
       <img className='intro-image'
       src="/img/message1.png"

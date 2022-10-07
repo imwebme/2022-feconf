@@ -11,6 +11,12 @@ $breakpoint4: 1440px;
 $breakpoint5: 1600px;
 $breakpoint6: 1920px;
 
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Pretendard-Regular';
@@ -269,6 +275,7 @@ html {
 
 .intro-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-self: baseline;
   flex-wrap: wrap;
@@ -278,20 +285,15 @@ html {
 
   img.intro-image {
     margin-bottom: 1rem;
+    max-width: 100%;
   }
 }
 
-.product-section {
-  margin-bottom: 30rem;
-
-  img.intro-image:first-child {
-    transform: translate(24rem, 2rem);
-  }
-
-  img.intro-image:last-child {
-    position: absolute;
-    transform: translate(-2rem, 10rem);
-  }
+.intro-image-container {
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mission-container {
@@ -337,13 +339,37 @@ html {
 }
 
 .enginner-title {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
   max-width: 100%;
-}
-
-.enginner-para {
+  font-weight: 700;
+  word-break: break-all;
+  font-family: 'NEXON Lv1 Gothic OTF';
   color: white;
-
 }
+
+.enginner-content-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  background: transparent;
+  border-radius: 3rem;
+  color: white;
+  font-family: 'Pretendard-Regular';
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    border: 1px solid white;
+  }
+}
+
 
 .enginner-content-wrap {
   width: 100%;
@@ -351,7 +377,11 @@ html {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
   max-height: 917px;
+  margin: 137px 0;
+}
 
+.enginner-title-mo {
+  display: none;
 }
 
 @media all and (max-width: 1024px) {
@@ -400,12 +430,36 @@ html {
 
 }
 
+.enginner-para {
+  color: white;
+  max-width: 60%;
+  line-height: 150%;
+  text-align: center;
+}
 
 .event-image-mo {
   display: none;
 }
 
 @media all and (max-width: 728px) {
+  .enginner-title-mo {
+    display: block;
+  }
+
+  .enginner-para {
+    color: white;
+    max-width: 80%;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .enginner-content-wrap {
+    margin: 50px 0;
+  }
+
+  .enginner-title {
+    display: none;
+  }
 
   .nav .menu {
     display: none;
@@ -493,16 +547,16 @@ html {
 }
 
 .intro-image-wrap {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 
 }
 
 .intro-image-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   max-width: 100%;
-  transform: translate(-50%, -50%);
+  position: absolute
+  ;
 }
 
 .paragraph {
