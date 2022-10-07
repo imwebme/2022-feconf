@@ -355,7 +355,9 @@ html {
 
 .mission-container h1 {
   font-size: 5rem;
+  max-width: 100%;
   font-weight: 700;
+  text-align: center;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -373,10 +375,6 @@ html {
   height: 718px;
   border: 2px solid gray;
   border-radius: 3rem;
-}
-
-.mission-container {
-  width: 100vw;
 }
 
 .enginner-container {
@@ -464,12 +462,25 @@ html {
   font-weight: 700;
 }
 
+.event-image-mo {
+  display: none;
+}
+
 @media all and (max-width: 728px) {
   .nav .menu {
     display: none;
   }
+  .video-container {
+    height: 376px;
+  }
   .nav .logoWapper {
     gap: 0;
+  }
+  .event-image {
+    display: none;
+  }
+  .event-image-mo {
+    display: block;
   }
 }
 

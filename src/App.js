@@ -60,7 +60,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
             <span className="logo">
             </span>
           </a>
