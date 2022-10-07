@@ -41,5 +41,6 @@
   },
   "devDependencies": {
     "prettier": "^2.7.1"
-  }
+  },
+  "homepage": "https://imwebme.github.io/2022-feconf/"
 }
